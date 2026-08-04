@@ -29,6 +29,6 @@ buildDotnetModule (finalAttrs: {
     homepage = "https://github.com/MihomoManager/MihomoManager.MihomoMixin";
     license = lib.licenses.mit;
     mainProgram = "MihomoManager.MihomoMixin";
-    # maintainers = with lib.maintainers; [ yueyinqiu ];
+    maintainers = [ ];
   };
 })
