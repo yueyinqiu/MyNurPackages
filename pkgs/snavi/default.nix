@@ -7,13 +7,13 @@
 
 buildDotnetModule (finalAttrs: {
   pname = "snavi";
-  version = "0.0.2";
+  version = "0.0.4";
 
   src = fetchFromGitHub {
     owner = "yueyinqiu";
     repo = "Snavi";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-qL8MW7QS0/Ybj3S1tDyYD8W7WuS5nW+VAqZbt6F5brI=";
+    hash = "sha256-TA/MUSjoe5mknXxqkW8jpcgpoC7164mhoR4Ansx7tRM=";
   };
 
   projectFile = "src/Snavi/Snavi.csproj";
@@ -25,7 +25,7 @@ buildDotnetModule (finalAttrs: {
   __structuredAttrs = true;
 
   meta = {
-    description = "A navi-like interactive cheatsheet tool for the command line, with fzf";
+    description = "A navi-like interactive command-line cheatsheet tool but it's more safe with structured cheat file and CSharp script support.";
     homepage = "https://github.com/yueyinqiu/Snavi";
     license = lib.licenses.mit;
     mainProgram = "Snavi";
