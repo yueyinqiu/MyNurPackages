@@ -7,7 +7,7 @@
 
 buildDotnetModule (finalAttrs: {
   pname = "snavi";
-  version = "0.2.2";
+  version = "0.0.2";
 
   src = fetchFromGitHub {
     owner = "yueyinqiu";
