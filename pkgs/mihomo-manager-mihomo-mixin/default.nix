@@ -28,7 +28,7 @@ buildDotnetModule (finalAttrs: {
     description = "Mihomo configuration merge tool with merge, edit, and JS scripting actions";
     homepage = "https://github.com/MihomoManager/MihomoManager.MihomoMixin";
     license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ yueyinqiu ];
     mainProgram = "MihomoManager.MihomoMixin";
+    # maintainers = with lib.maintainers; [ yueyinqiu ];
   };
 })
