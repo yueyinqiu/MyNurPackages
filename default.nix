@@ -20,14 +20,8 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   mihomo-manager-mihomo-mixin = pkgs.callPackage ./pkgs/mihomo-manager-mihomo-mixin { };
+  snavi = pkgs.callPackage ./pkgs/snavi { };
 
-  snavi = pkgs.callPackage (pkgs.fetchFromGitHub {
-    owner = "yueyinqiu";
-    repo = "Snavi";
-    rev = "d90fae874e9a53a3b2eeb59ebd6934d2fdc6dfe8";
-    hash = "sha256-2WllLhoRR9aL1WoOP2ERp950eGsUBI3hkkE3Trw4uyA=";
-  } + "/nix") { };
-  
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
